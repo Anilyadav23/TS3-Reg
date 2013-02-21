@@ -1,15 +1,5 @@
 <?php
 
-/**
- * @author Anthony Lawrence <freelancer@anthonylawrence.me.uk>
- * @copyright Copyright (c) 2011, Anthony Lawrence
- *
- * Released as is with no guarantees and all that usual stuff.
- *
- * This copyright must remain intact at all times.
- * @version 1.5
- */
-
 // Define the authentication information.
 $info = "To login, please user your VATSIM ID as your username and your NETWORK PASSWORD as your password.";
 define("AUTHENTICATION_INFO", $info);
