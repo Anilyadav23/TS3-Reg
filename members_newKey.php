@@ -24,7 +24,7 @@ if (isset($_POST["register"], $_POST["uniqueID"])) {
     // Check this user is allowed more registrations.
     $query = mysql_query("SELECT *
                           FROM `".SQL_PREFIX."registrations`
-                          WHERE `memberID` '" . mysql_real_escape_string($memberID) . "'
+                          WHERE `memberID` = '" . mysql_real_escape_string($memberID) . "'
                             AND `deleted` = 0");
     if(mysql_num_rows($query) >= TS_MAX_ID){
         header("Location: members_form.php?error=max_reg");
