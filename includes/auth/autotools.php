@@ -20,9 +20,6 @@ function auth_login($cid, $pass){
     // Get the response from auto tools.
     $url = AUTO_TOOLS_URL . "pwordcheck.php?authid=".AUTO_TOOLS_USER."&authpassword=".AUTO_TOOLS_PASS."&id=".$cid."&password=".$pass;
     $result = file($url);
-    
-    var_dump($result);
-    die($url);
 
     // If the result isn't an array, return false
     if(!$result || !is_array($result)){
