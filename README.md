@@ -4,7 +4,7 @@ TS3-Reg
 TeamSpeak3 Registration Website [Migrated from Assembla]
 
 
-Installation
+Installation Process
 ============
 1) Edit includes/config.php to contain your site's details.
 2) Configure the authentication method includes/auth/default.php
